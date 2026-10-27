@@ -19,13 +19,13 @@ export default function Navbar() {
   return (
     <>
       {/* Top Announcement Bar */}
-      <div className="bg-gradient-to-r from-[#042517] via-[#0b3d27] to-[#042517] border-b border-[#00d37f]/25 py-2 px-4 text-center text-xs md:text-sm font-medium text-[#92eec4]">
-        <div className="container mx-auto flex items-center justify-center gap-3">
-          <span className="bg-[#00d37f] text-[#042013] text-[11px] font-bold uppercase px-2.5 py-0.5 rounded-full">
+      <div className="bg-gradient-to-r from-[#042517] via-[#0b3d27] to-[#042517] border-b border-[#00d37f]/25 py-1.5 px-3 text-center text-[11px] sm:text-xs font-medium text-[#92eec4]">
+        <div className="container mx-auto flex items-center justify-center gap-2 flex-wrap">
+          <span className="hidden sm:inline-block bg-[#00d37f] text-[#042013] text-[10px] font-bold uppercase px-2 py-0.5 rounded-full">
             Woodstock, GA
           </span>
           <span>
-            Visit us at 1910 Eagle Dr #1500! Call{" "}
+            📍 1910 Eagle Dr #1500 &bull; Call{" "}
             <a href="tel:7705910007" className="underline font-bold text-white hover:text-[#00d37f]">
               (770) 591-0007
             </a>
@@ -41,13 +41,13 @@ export default function Navbar() {
             : "bg-[#080f0c]/85 border-white/5"
         }`}
       >
-        <div className="container mx-auto px-6 h-20 flex items-center justify-between">
+        <div className="container mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
           {/* Logo */}
-          <Link href="#home" className="flex items-center gap-3 group">
-            <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#1a382c] to-[#0a1812] border-2 border-[#e2b763] flex items-center justify-center shadow-[0_0_15px_rgba(226,183,99,0.25)] group-hover:scale-105 group-hover:border-[#00d37f] transition-all">
+          <Link href="#home" className="flex items-center gap-2.5 sm:gap-3 group">
+            <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-gradient-to-br from-[#1a382c] to-[#0a1812] border-2 border-[#e2b763] flex items-center justify-center shadow-[0_0_15px_rgba(226,183,99,0.25)] group-hover:scale-105 group-hover:border-[#00d37f] transition-all shrink-0">
               <svg
                 viewBox="0 0 24 24"
-                className="w-6 h-6 stroke-[#e2b763] group-hover:stroke-[#00d37f] transition-colors"
+                className="w-5 h-5 sm:w-6 sm:h-6 stroke-[#e2b763] group-hover:stroke-[#00d37f] transition-colors"
                 fill="none"
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -57,10 +57,10 @@ export default function Navbar() {
               </svg>
             </div>
             <div className="flex flex-col">
-              <span className="font-heading text-xl font-extrabold tracking-wider uppercase bg-gradient-to-r from-white via-white to-[#e2b763] bg-clip-text text-transparent">
+              <span className="font-heading text-base sm:text-xl font-extrabold tracking-wider uppercase bg-gradient-to-r from-white via-white to-[#e2b763] bg-clip-text text-transparent leading-tight">
                 Animal Atlanta
               </span>
-              <span className="text-[10px] tracking-widest uppercase text-[#00d37f] font-semibold">
+              <span className="text-[9px] sm:text-[10px] tracking-widest uppercase text-[#00d37f] font-semibold leading-tight">
                 Exotics &bull; Feeders &bull; Care
               </span>
             </div>

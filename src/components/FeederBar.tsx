@@ -3,30 +3,30 @@ import { Bug, Sparkles } from "lucide-react";
 
 export default function FeederBar() {
   return (
-    <section className="py-20 bg-gradient-to-b from-[#0c2016]/40 via-[#070e0b] to-[#050a08] border-t border-white/10" id="feeders">
-      <div className="container mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#00d37f]/10 border border-[#00d37f]/30 text-[#00d37f] text-xs font-bold uppercase tracking-wider mb-4">
+    <section className="py-12 sm:py-20 bg-gradient-to-b from-[#0c2016]/40 via-[#070e0b] to-[#050a08] border-t border-white/10" id="feeders">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#00d37f]/10 border border-[#00d37f]/30 text-[#00d37f] text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-3">
             <span>🐍 The Feeder Bar 🦎</span>
           </div>
-          <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-white mb-4">
+          <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-white mb-3">
             Live &amp; Frozen Feeders Always in Stock
           </h2>
-          <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-            Whether you&apos;re feeding a tiny hatchling or a giant constrictor, we&apos;ve got you covered with fresh feeder insects and live/frozen rodents. Not sure what size your pet needs? Our staff will assist you!
+          <p className="text-gray-300 text-xs sm:text-sm leading-relaxed max-w-xl mx-auto">
+            Fresh feeder insects and quality live/frozen rodents. Not sure what size your pet needs? Our staff will assist you in-store!
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           
           {/* Insects Card */}
-          <div className="bg-[#0e1713] border border-white/10 hover:border-[#00d37f]/40 rounded-xl p-6 sm:p-8 transition-all shadow-lg">
-            <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
-              <h3 className="font-heading text-xl font-bold text-white flex items-center gap-2.5">
-                <span className="text-2xl">🦗</span> Live Feeder Insects
+          <div className="bg-[#0e1713] border border-white/10 hover:border-[#00d37f]/40 rounded-2xl p-4 sm:p-8 transition-all shadow-lg">
+            <div className="flex items-center justify-between pb-3 mb-3 border-b border-white/10 flex-wrap gap-2">
+              <h3 className="font-heading text-lg sm:text-xl font-bold text-white flex items-center gap-2">
+                <span className="text-xl sm:text-2xl">🦗</span> Live Feeder Insects
               </h3>
-              <span className="bg-[#00d37f]/15 border border-[#00d37f] text-[#00d37f] text-[11px] font-bold uppercase px-2.5 py-0.5 rounded-full">
-                Fresh Batches Weekly
+              <span className="bg-[#00d37f]/15 border border-[#00d37f]/40 text-[#00d37f] text-[10px] sm:text-[11px] font-bold uppercase px-2.5 py-0.5 rounded-full">
+                Fresh Batches
               </span>
             </div>
 

@@ -17,23 +17,23 @@ export default function StoreLocation() {
   };
 
   return (
-    <section className="py-20 bg-[#080f0c]" id="visit">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+    <section className="py-12 sm:py-20 bg-[#080f0c]" id="visit">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-stretch">
           
           {/* Left Column: Official Store Info */}
-          <div className="lg:col-span-5 bg-[#0e1713] border border-white/10 rounded-2xl p-8 sm:p-10 flex flex-col justify-between shadow-xl">
+          <div className="lg:col-span-5 bg-[#0e1713] border border-white/10 rounded-2xl p-5 sm:p-8 flex flex-col justify-between shadow-xl">
             <div>
-              <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#e2b763] mb-4">
+              <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#e2b763] mb-3">
                 <MapPin className="w-3.5 h-3.5" />
                 <span>Woodstock / Metro Atlanta</span>
               </div>
 
-              <h2 className="font-heading text-3xl font-extrabold text-white mb-6">
+              <h2 className="font-heading text-2xl sm:text-3xl font-extrabold text-white mb-4 sm:mb-6">
                 Visit Animal Atlanta
               </h2>
 
-              <div className="space-y-6 mb-8">
+              <div className="space-y-4 sm:space-y-6 mb-6">
                 {/* Address */}
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-[#00d37f]/10 border border-[#00d37f]/30 flex items-center justify-center text-[#00d37f] shrink-0 mt-1">
@@ -108,7 +108,7 @@ export default function StoreLocation() {
           </div>
 
           {/* Right Column: Interactive Visit & Inquiry Form */}
-          <div className="lg:col-span-7 bg-[#0e1713] border border-[#00d37f]/30 rounded-2xl p-8 sm:p-10 shadow-2xl flex flex-col justify-between">
+          <div className="lg:col-span-7 bg-[#0e1713] border border-[#00d37f]/30 rounded-2xl p-5 sm:p-8 shadow-2xl flex flex-col justify-between">
             {formSubmitted ? (
               <div className="my-auto text-center py-12">
                 <div className="w-16 h-16 rounded-full bg-[#00d37f]/20 border border-[#00d37f] text-[#00d37f] flex items-center justify-center mx-auto mb-4">
@@ -129,10 +129,10 @@ export default function StoreLocation() {
               </div>
             ) : (
               <div>
-                <h3 className="font-heading text-2xl font-bold text-white mb-2">
+                <h3 className="font-heading text-xl sm:text-2xl font-bold text-white mb-2">
                   Contact Store / Request Animal Hold
                 </h3>
-                <p className="text-gray-300 text-sm mb-6">
+                <p className="text-gray-300 text-xs sm:text-sm mb-6">
                   Have a question about bird grooming, live feeder supply, or available species? Drop us a note!
                 </p>
 
@@ -237,11 +237,11 @@ export default function StoreLocation() {
         </div>
 
         {/* Interactive Google Maps Embed for Animal Atlanta */}
-        <div className="mt-12 w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-[#0e1713]">
-          <div className="px-6 py-4 bg-[#0a130f] border-b border-white/10 flex flex-wrap items-center justify-between gap-3">
-            <div className="flex items-center gap-2 text-sm font-bold text-white">
-              <MapPin className="w-4 h-4 text-[#00d37f]" />
-              <span>Animal Atlanta &bull; 1910 Eagle Dr #1500, Woodstock, GA 30189</span>
+        <div className="mt-8 sm:mt-12 w-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-[#0e1713]">
+          <div className="px-4 sm:px-6 py-3 sm:py-4 bg-[#0a130f] border-b border-white/10 flex flex-wrap items-center justify-between gap-2 sm:gap-3">
+            <div className="flex items-center gap-2 text-xs sm:text-sm font-bold text-white">
+              <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#00d37f] shrink-0" />
+              <span className="truncate">Animal Atlanta &bull; 1910 Eagle Dr #1500, Woodstock, GA</span>
             </div>
             <a
               href="https://maps.google.com/?q=1910+Eagle+Dr+1500+Woodstock+GA+30189"
@@ -256,7 +256,8 @@ export default function StoreLocation() {
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446665.12574338017!2d-85.09568793979243!3d34.04174032502661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f56a224524a6a1%3A0xc7b18c38de72cdf8!2sAnimal%20Atlanta!5e1!3m2!1spt-BR!2sbr!4v1793074264791!5m2!1spt-BR!2sbr"
             width="100%"
-            height="420"
+            height="340"
+            className="w-full h-[280px] sm:h-[380px] md:h-[420px]"
             style={{ border: 0, display: "block" }}
             allowFullScreen
             loading="lazy"
