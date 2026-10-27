@@ -26,10 +26,10 @@ export default function Hero({ onOpenDevModal }: HeroProps) {
           alt="Prehistoric dinosaur surrounded by scarlet macaw, python, and iguana in lush jungle at Animal Atlanta"
           fill
           priority
-          className="object-cover object-[70%_top] sm:object-center transition-all duration-700"
+          className="object-cover object-[70%_top] sm:object-center brightness-105 contrast-105 transition-all duration-700"
         />
-        {/* Responsive dark gradient overlay: subtle vertical vignette on mobile to highlight art while keeping text crisp */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050a08] via-[#050a08]/90 via-60% to-[#050a08]/30 sm:bg-gradient-to-r sm:from-[#050a08] sm:via-[#050a08]/85 sm:to-transparent z-10" />
+        {/* Soft, light gradient overlay to let vibrant wallpaper shine while keeping text legible */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050a08]/80 via-[#050a08]/30 to-transparent sm:bg-gradient-to-r sm:from-[#050a08]/65 sm:via-[#050a08]/25 sm:to-transparent z-10" />
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-20 py-10 sm:py-20">
@@ -40,15 +40,15 @@ export default function Hero({ onOpenDevModal }: HeroProps) {
             <span className="truncate">Exotic Pets &bull; Feeders &bull; Woodstock, GA</span>
           </div>
 
-          <h1 className="font-heading text-2xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-3 sm:mb-4 drop-shadow-lg tracking-tight">
+          <h1 className="font-heading text-2xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-3 sm:mb-4 drop-shadow-[0_4px_24px_rgba(0,0,0,0.95)] tracking-tight">
             Atlanta’s Premier
-            <span className="block mt-1 bg-gradient-to-r from-[#00d37f] via-[#46e6a3] to-[#80ffc7] bg-clip-text text-transparent">
+            <span className="block mt-1 bg-gradient-to-r from-[#00d37f] via-[#46e6a3] to-[#80ffc7] bg-clip-text text-transparent drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)]">
               Exotic Pet Destination
             </span>
           </h1>
 
-          <p className="text-gray-300 text-xs sm:text-base leading-relaxed mb-5 sm:mb-7 max-w-lg drop-shadow">
-            <strong className="text-white">Welcome to Animal Atlanta!</strong> Your trusted destination for healthy captive-bred reptiles, hand-raised birds, small exotic pets, and live feeder supplies in Woodstock, Georgia.
+          <p className="text-white text-xs sm:text-base leading-relaxed mb-5 sm:mb-7 max-w-lg drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)] font-normal">
+            <strong className="text-white font-bold">Welcome to Animal Atlanta!</strong> Your trusted destination for healthy captive-bred reptiles, hand-raised birds, small exotic pets, and live feeder supplies in Woodstock, Georgia.
           </p>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3.5 mb-5 sm:mb-8">
