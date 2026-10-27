@@ -95,15 +95,16 @@ export default function Navbar() {
           </nav>
 
           {/* Header Right Phone Badge */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4">
             <a
               href="tel:7705910007"
-              className="flex items-center gap-3 bg-white/5 hover:bg-[#00d37f]/15 border border-white/10 hover:border-[#00d37f]/40 py-2 px-4 rounded-full transition-all group"
+              className="flex items-center gap-2 sm:gap-3 bg-white/5 hover:bg-[#00d37f]/15 border border-white/10 hover:border-[#00d37f]/40 p-2 sm:py-2 sm:px-4 rounded-full transition-all group"
+              title="Call Animal Atlanta (770) 591-0007"
             >
-              <div className="w-7 h-7 rounded-full bg-[#00d37f]/15 flex items-center justify-center text-[#00d37f] group-hover:scale-110 transition-transform">
+              <div className="w-7 h-7 rounded-full bg-[#00d37f]/15 flex items-center justify-center text-[#00d37f] group-hover:scale-110 transition-transform shrink-0">
                 <Phone className="w-3.5 h-3.5" />
               </div>
-              <div className="flex flex-col text-left">
+              <div className="hidden sm:flex flex-col text-left">
                 <span className="text-[10px] uppercase text-gray-400 font-semibold tracking-wider">Call Store Direct</span>
                 <span className="text-xs md:text-sm font-bold text-white tracking-wide">(770) 591-0007</span>
               </div>
@@ -112,10 +113,10 @@ export default function Navbar() {
             {/* Mobile Hamburger Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden text-gray-300 hover:text-white p-2"
+              className="lg:hidden text-gray-300 hover:text-white p-2 rounded-lg bg-white/5 border border-white/10"
               aria-label="Toggle Menu"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>

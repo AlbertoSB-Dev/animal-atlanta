@@ -56,10 +56,10 @@ export default function Hero({ onOpenDevModal }: HeroProps) {
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-4 mb-10">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mb-10">
             <button
               onClick={handleBrowseClick}
-              className="inline-flex items-center justify-center gap-2.5 bg-[#00b86c] hover:bg-[#00d37f] text-[#04190f] font-bold text-base px-7 py-3.5 rounded-full shadow-[0_4px_25px_rgba(0,211,127,0.35)] hover:shadow-[0_8px_35px_rgba(0,211,127,0.5)] transition-all hover:-translate-y-0.5 cursor-pointer"
+              className="inline-flex items-center justify-center gap-2.5 bg-[#00b86c] hover:bg-[#00d37f] text-[#04190f] font-bold text-sm sm:text-base px-6 sm:px-7 py-3.5 rounded-full shadow-[0_4px_25px_rgba(0,211,127,0.35)] hover:shadow-[0_8px_35px_rgba(0,211,127,0.5)] transition-all hover:-translate-y-0.5 cursor-pointer text-center"
             >
               <span>Browse Available Pets</span>
               <Lock className="w-4 h-4 text-[#04190f]" />
@@ -67,7 +67,7 @@ export default function Hero({ onOpenDevModal }: HeroProps) {
 
             <Link
               href="#visit"
-              className="inline-flex items-center justify-center gap-2.5 bg-[#050a08]/80 hover:bg-[#050a08] text-white font-semibold text-base px-6 py-3.5 rounded-full border border-white/20 hover:border-white/40 backdrop-blur-md transition-all hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2.5 bg-[#050a08]/80 hover:bg-[#050a08] text-white font-semibold text-sm sm:text-base px-6 py-3.5 rounded-full border border-white/20 hover:border-white/40 backdrop-blur-md transition-all hover:-translate-y-0.5 text-center"
             >
               <MapPin className="w-4 h-4 text-[#00d37f]" />
               <span>Visit Woodstock Store</span>
@@ -75,30 +75,30 @@ export default function Hero({ onOpenDevModal }: HeroProps) {
           </div>
 
           {/* Quick Stats Badges with Glassmorphism */}
-          <div className="grid grid-cols-3 gap-4 max-w-lg bg-[#050a08]/75 backdrop-blur-md p-4 rounded-xl border border-white/10 shadow-xl">
+          <div className="grid grid-cols-3 gap-2 sm:gap-4 max-w-lg bg-[#050a08]/75 backdrop-blur-md p-3 sm:p-4 rounded-xl border border-white/10 shadow-xl">
             <div>
-              <div className="font-heading text-xl sm:text-2xl font-extrabold text-white">
+              <div className="font-heading text-lg sm:text-2xl font-extrabold text-white">
                 10am<span className="text-[#00d37f]">-</span>7pm
               </div>
-              <div className="text-[10px] uppercase text-gray-300 tracking-wider mt-0.5 font-semibold">
+              <div className="text-[9px] sm:text-[10px] uppercase text-gray-300 tracking-wider mt-0.5 font-semibold">
                 Mon &ndash; Sat
               </div>
             </div>
 
             <div>
-              <div className="font-heading text-xl sm:text-2xl font-extrabold text-white">
+              <div className="font-heading text-lg sm:text-2xl font-extrabold text-white">
                 12pm<span className="text-[#00d37f]">-</span>5pm
               </div>
-              <div className="text-[10px] uppercase text-gray-300 tracking-wider mt-0.5 font-semibold">
+              <div className="text-[9px] sm:text-[10px] uppercase text-gray-300 tracking-wider mt-0.5 font-semibold">
                 Sunday Hours
               </div>
             </div>
 
             <div>
-              <div className="font-heading text-xl sm:text-2xl font-extrabold text-white">
+              <div className="font-heading text-lg sm:text-2xl font-extrabold text-white">
                 100<span className="text-[#00d37f]">%</span>
               </div>
-              <div className="text-[10px] uppercase text-gray-300 tracking-wider mt-0.5 font-semibold">
+              <div className="text-[9px] sm:text-[10px] uppercase text-gray-300 tracking-wider mt-0.5 font-semibold">
                 Live Feeders
               </div>
             </div>

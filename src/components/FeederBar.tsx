@@ -30,57 +30,59 @@ export default function FeederBar() {
               </span>
             </div>
 
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr className="text-xs uppercase tracking-wider text-gray-400 border-b border-white/5">
-                  <th className="pb-3">Feeder Type</th>
-                  <th className="pb-3">Quantity / Size</th>
-                  <th className="pb-3 text-right">Price</th>
-                </tr>
-              </thead>
-              <tbody className="text-sm divide-y divide-white/5">
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Dubia Roaches</td>
-                  <td className="py-2.5 text-gray-300">Small (25 count)</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$5.00</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Dubia Roaches</td>
-                  <td className="py-2.5 text-gray-300">Medium (25 count)</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$6.00</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Dubia Roaches</td>
-                  <td className="py-2.5 text-gray-300">Large (25 count)</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$7.00</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Feeder Crickets</td>
-                  <td className="py-2.5 text-gray-300">Small, Medium or Large (per dozen)</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$1.00</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Superworms</td>
-                  <td className="py-2.5 text-gray-300">25 count cup</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$3.00</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Mealworms</td>
-                  <td className="py-2.5 text-gray-300">50 count cup</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$4.00</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Wax Worms</td>
-                  <td className="py-2.5 text-gray-300">50 count cup</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$5.00</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Hornworms</td>
-                  <td className="py-2.5 text-gray-300">Individual live worm</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$1.00 / ea</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="overflow-x-auto -mx-2 px-2">
+              <table className="w-full text-left border-collapse min-w-[320px]">
+                <thead>
+                  <tr className="text-xs uppercase tracking-wider text-gray-400 border-b border-white/5">
+                    <th className="pb-3">Feeder Type</th>
+                    <th className="pb-3">Quantity / Size</th>
+                    <th className="pb-3 text-right">Price</th>
+                  </tr>
+                </thead>
+                <tbody className="text-sm divide-y divide-white/5">
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Dubia Roaches</td>
+                    <td className="py-2.5 text-gray-300">Small (25 count)</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$5.00</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Dubia Roaches</td>
+                    <td className="py-2.5 text-gray-300">Medium (25 count)</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$6.00</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Dubia Roaches</td>
+                    <td className="py-2.5 text-gray-300">Large (25 count)</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$7.00</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Feeder Crickets</td>
+                    <td className="py-2.5 text-gray-300">Small, Medium or Large (per dozen)</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$1.00</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Superworms</td>
+                    <td className="py-2.5 text-gray-300">25 count cup</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$3.00</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Mealworms</td>
+                    <td className="py-2.5 text-gray-300">50 count cup</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$4.00</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Wax Worms</td>
+                    <td className="py-2.5 text-gray-300">50 count cup</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$5.00</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Hornworms</td>
+                    <td className="py-2.5 text-gray-300">Individual live worm</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$1.00 / ea</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
 
           {/* Rodents Card */}
@@ -94,57 +96,59 @@ export default function FeederBar() {
               </span>
             </div>
 
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr className="text-xs uppercase tracking-wider text-gray-400 border-b border-white/5">
-                  <th className="pb-3">Category</th>
-                  <th className="pb-3">Size Stage</th>
-                  <th className="pb-3 text-right">Price</th>
-                </tr>
-              </thead>
-              <tbody className="text-sm divide-y divide-white/5">
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Feeder Mice</td>
-                  <td className="py-2.5 text-gray-300">Pinkie Mouse</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$2.00</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Feeder Mice</td>
-                  <td className="py-2.5 text-gray-300">Fuzzie Mouse</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$2.00</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Feeder Mice</td>
-                  <td className="py-2.5 text-gray-300">Adult Mouse</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$3.50</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Feeder Rats</td>
-                  <td className="py-2.5 text-gray-300">Pinkie / Fuzzie Rat</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$4.00</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Feeder Rats</td>
-                  <td className="py-2.5 text-gray-300">Crawler / Weanling Rat</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$4.00</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Feeder Rats</td>
-                  <td className="py-2.5 text-gray-300">Small Rat</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$5.00</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Feeder Rats</td>
-                  <td className="py-2.5 text-gray-300">Medium Rat</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$7.00</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 font-semibold text-white">Feeder Rats</td>
-                  <td className="py-2.5 text-gray-300">Large ($9) &bull; Jumbo ($12) &bull; Colossal ($13)</td>
-                  <td className="py-2.5 text-right font-bold text-[#00d37f]">$9 &ndash; $13</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className="overflow-x-auto -mx-2 px-2">
+              <table className="w-full text-left border-collapse min-w-[320px]">
+                <thead>
+                  <tr className="text-xs uppercase tracking-wider text-gray-400 border-b border-white/5">
+                    <th className="pb-3">Category</th>
+                    <th className="pb-3">Size Stage</th>
+                    <th className="pb-3 text-right">Price</th>
+                  </tr>
+                </thead>
+                <tbody className="text-sm divide-y divide-white/5">
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Feeder Mice</td>
+                    <td className="py-2.5 text-gray-300">Pinkie Mouse</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$2.00</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Feeder Mice</td>
+                    <td className="py-2.5 text-gray-300">Fuzzie Mouse</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$2.00</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Feeder Mice</td>
+                    <td className="py-2.5 text-gray-300">Adult Mouse</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$3.50</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Feeder Rats</td>
+                    <td className="py-2.5 text-gray-300">Pinkie / Fuzzie Rat</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$4.00</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Feeder Rats</td>
+                    <td className="py-2.5 text-gray-300">Crawler / Weanling Rat</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$4.00</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Feeder Rats</td>
+                    <td className="py-2.5 text-gray-300">Small Rat</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$5.00</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Feeder Rats</td>
+                    <td className="py-2.5 text-gray-300">Medium Rat</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$7.00</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2.5 font-semibold text-white">Feeder Rats</td>
+                    <td className="py-2.5 text-gray-300">Large ($9) &bull; Jumbo ($12) &bull; Colossal ($13)</td>
+                    <td className="py-2.5 text-right font-bold text-[#00d37f]">$9 &ndash; $13</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
 
         </div>
