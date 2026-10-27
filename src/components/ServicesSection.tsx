@@ -1,5 +1,6 @@
 import React from "react";
-import { Scissors, Dna, Sparkles, Home, Heart } from "lucide-react";
+import Image from "next/image";
+import { Scissors, Dna, Sparkles, Home, Heart, ShieldCheck } from "lucide-react";
 
 export default function ServicesSection() {
   const services = [
@@ -32,7 +33,7 @@ export default function ServicesSection() {
   return (
     <section className="py-20 bg-[#080f0c]" id="services">
       <div className="container mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-12">
+        <div className="text-center max-w-2xl mx-auto mb-10">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#00d37f]/10 border border-[#00d37f]/30 text-[#00d37f] text-xs font-bold uppercase tracking-wider mb-4">
             <Heart className="w-3.5 h-3.5 text-[#00d37f]" />
             <span>Professional Care</span>
@@ -43,6 +44,27 @@ export default function ServicesSection() {
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
             We provide hands-on, attentive care for birds, reptiles, and small exotic pets with experienced handlers and compassionate specialists.
           </p>
+        </div>
+
+        {/* Panoramic Care & Services Showcase Image */}
+        <div className="relative w-full h-[220px] sm:h-[320px] md:h-[400px] rounded-2xl overflow-hidden border border-white/10 shadow-[0_15px_40px_rgba(0,0,0,0.7)] mb-10 group">
+          <Image
+            src="/images/services_care_showcase.jpg"
+            alt="Animal Atlanta specialized grooming, bird DNA sexing, reptile nail trimming, and pet boarding specialists"
+            fill
+            className="object-cover object-center group-hover:scale-102 transition-transform duration-700"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#050a08]/90 via-transparent to-black/20 pointer-events-none" />
+          
+          <div className="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 flex flex-wrap items-center justify-between gap-3 bg-[#050a08]/85 backdrop-blur-md p-3 sm:p-4 rounded-xl border border-white/10">
+            <div className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-white">
+              <ShieldCheck className="w-4 h-4 text-[#00d37f]" />
+              <span>Dedicated Care Facility &bull; Birds, Reptiles &amp; Small Mammals</span>
+            </div>
+            <span className="text-[10px] sm:text-[11px] font-bold text-[#e2b763] uppercase tracking-wider bg-[#e2b763]/10 px-2.5 py-1 rounded-full border border-[#e2b763]/30">
+              In-Store Husbandry Specialists
+            </span>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
