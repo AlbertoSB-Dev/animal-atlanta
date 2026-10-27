@@ -126,11 +126,11 @@ export default function Footer() {
                 type="email"
                 required
                 placeholder="Enter email..."
-                className="bg-white/5 border border-white/10 rounded-full px-4 py-2 text-xs text-white focus:outline-none focus:border-[#00d37f] grow"
+                className="bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-[#00d37f] grow"
               />
               <button
                 type="submit"
-                className="bg-[#00b86c] hover:bg-[#00d37f] text-[#04190f] text-xs font-bold px-4 py-2 rounded-full cursor-pointer"
+                className="bg-[#00d37f] hover:bg-[#20e695] text-[#04190f] text-xs font-bold px-4 py-2 rounded-xl cursor-pointer transition-all"
               >
                 Join
               </button>

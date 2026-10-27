@@ -1,31 +1,61 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { Bug, Sparkles } from "lucide-react";
 
 export default function FeederBar() {
+  const [activeTab, setActiveTab] = useState<"insects" | "rodents">("insects");
+
   return (
-    <section className="py-12 sm:py-20 bg-gradient-to-b from-[#0c2016]/40 via-[#070e0b] to-[#050a08] border-t border-white/10" id="feeders">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#00d37f]/10 border border-[#00d37f]/30 text-[#00d37f] text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-3">
+    <section className="py-10 sm:py-20 bg-gradient-to-b from-[#0c2016]/40 via-[#070e0b] to-[#050a08] border-t border-white/10" id="feeders">
+      <div className="container mx-auto px-3.5 sm:px-6">
+        <div className="text-center max-w-xl mx-auto mb-6 sm:mb-12">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#00d37f]/10 border border-[#00d37f]/30 text-[#00d37f] text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-2.5">
             <span>🐍 The Feeder Bar 🦎</span>
           </div>
-          <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-white mb-3">
+          <h2 className="font-heading text-xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-2 tracking-tight">
             Live &amp; Frozen Feeders Always in Stock
           </h2>
-          <p className="text-gray-300 text-xs sm:text-sm leading-relaxed max-w-xl mx-auto">
-            Fresh feeder insects and quality live/frozen rodents. Not sure what size your pet needs? Our staff will assist you in-store!
+          <p className="text-gray-300 text-xs sm:text-sm leading-relaxed max-w-lg mx-auto">
+            Fresh feeder insects &amp; frozen rodents always ready. Need sizing advice? Our team is ready to help!
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+        {/* Mobile Tab Switcher */}
+        <div className="flex lg:hidden items-center justify-center gap-2 mb-6 p-1 bg-[#0e1713] rounded-xl border border-white/10 max-w-xs mx-auto">
+          <button
+            onClick={() => setActiveTab("insects")}
+            className={`flex-1 py-2 px-3 rounded-lg text-xs font-bold transition-all ${
+              activeTab === "insects"
+                ? "bg-[#00d37f] text-[#04190f] shadow-md"
+                : "text-gray-400 hover:text-white"
+            }`}
+          >
+            🦗 Insects
+          </button>
+          <button
+            onClick={() => setActiveTab("rodents")}
+            className={`flex-1 py-2 px-3 rounded-lg text-xs font-bold transition-all ${
+              activeTab === "rodents"
+                ? "bg-[#e2b763] text-[#04190f] shadow-md"
+                : "text-gray-400 hover:text-white"
+            }`}
+          >
+            🐭 Rodents
+          </button>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8">
           
-          {/* Insects Card */}
-          <div className="bg-[#0e1713] border border-white/10 hover:border-[#00d37f]/40 rounded-2xl p-4 sm:p-8 transition-all shadow-lg">
+          {/* Insects Card - Visible if desktop OR activeTab === 'insects' */}
+          <div className={`bg-[#0e1713] border border-white/10 hover:border-[#00d37f]/40 rounded-xl sm:rounded-2xl p-4 sm:p-7 transition-all shadow-lg ${
+            activeTab === "insects" ? "block" : "hidden lg:block"
+          }`}>
             <div className="flex items-center justify-between pb-3 mb-3 border-b border-white/10 flex-wrap gap-2">
-              <h3 className="font-heading text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-                <span className="text-xl sm:text-2xl">🦗</span> Live Feeder Insects
+              <h3 className="font-heading text-base sm:text-xl font-bold text-white flex items-center gap-2 tracking-tight">
+                <span className="text-lg sm:text-2xl">🦗</span> Live Feeder Insects
               </h3>
-              <span className="bg-[#00d37f]/15 border border-[#00d37f]/40 text-[#00d37f] text-[10px] sm:text-[11px] font-bold uppercase px-2.5 py-0.5 rounded-full">
+              <span className="bg-[#00d37f]/15 border border-[#00d37f]/40 text-[#00d37f] text-[9px] sm:text-[11px] font-bold uppercase px-2 py-0.5 rounded-full">
                 Fresh Batches
               </span>
             </div>
@@ -86,12 +116,14 @@ export default function FeederBar() {
           </div>
 
           {/* Rodents Card */}
-          <div className="bg-[#0e1713] border border-white/10 hover:border-[#00d37f]/40 rounded-xl p-6 sm:p-8 transition-all shadow-lg">
-            <div className="flex items-center justify-between pb-4 mb-4 border-b border-white/10">
-              <h3 className="font-heading text-xl font-bold text-white flex items-center gap-2.5">
-                <span className="text-2xl">🐭</span> Live &amp; Frozen Rodents
+          <div className={`bg-[#0e1713] border border-white/10 hover:border-[#00d37f]/40 rounded-xl sm:rounded-2xl p-4 sm:p-7 transition-all shadow-lg ${
+            activeTab === "rodents" ? "block" : "hidden lg:block"
+          }`}>
+            <div className="flex items-center justify-between pb-3 mb-3 border-b border-white/10 flex-wrap gap-2">
+              <h3 className="font-heading text-base sm:text-xl font-bold text-white flex items-center gap-2 tracking-tight">
+                <span className="text-lg sm:text-2xl">🐭</span> Live &amp; Frozen Rodents
               </h3>
-              <span className="bg-[#e2b763]/15 border border-[#e2b763] text-[#e2b763] text-[11px] font-bold uppercase px-2.5 py-0.5 rounded-full">
+              <span className="bg-[#e2b763]/15 border border-[#e2b763] text-[#e2b763] text-[9px] sm:text-[11px] font-bold uppercase px-2 py-0.5 rounded-full">
                 Frozen &amp; Live Available
               </span>
             </div>

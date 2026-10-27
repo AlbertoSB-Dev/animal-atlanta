@@ -19,13 +19,13 @@ export default function Navbar() {
   return (
     <>
       {/* Top Announcement Bar */}
-      <div className="bg-gradient-to-r from-[#042517] via-[#0b3d27] to-[#042517] border-b border-[#00d37f]/25 py-1.5 px-3 text-center text-[11px] sm:text-xs font-medium text-[#92eec4]">
-        <div className="container mx-auto flex items-center justify-center gap-2 flex-wrap">
-          <span className="hidden sm:inline-block bg-[#00d37f] text-[#042013] text-[10px] font-bold uppercase px-2 py-0.5 rounded-full">
+      <div className="bg-gradient-to-r from-[#031d12] via-[#093521] to-[#031d12] border-b border-[#00d37f]/20 py-1.5 px-3 text-center text-[10px] sm:text-xs font-medium text-[#92eec4]">
+        <div className="container mx-auto flex items-center justify-center gap-1.5 sm:gap-2">
+          <span className="inline-block bg-[#00d37f] text-[#031d12] text-[9px] sm:text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded tracking-wide">
             Woodstock, GA
           </span>
-          <span>
-            📍 1910 Eagle Dr #1500 &bull; Call{" "}
+          <span className="truncate">
+            1910 Eagle Dr #1500 &bull;{" "}
             <a href="tel:7705910007" className="underline font-bold text-white hover:text-[#00d37f]">
               (770) 591-0007
             </a>
@@ -38,16 +38,16 @@ export default function Navbar() {
         className={`sticky top-0 z-50 transition-all duration-300 backdrop-blur-md border-b ${
           isScrolled
             ? "bg-[#050a08]/95 border-white/10 shadow-xl"
-            : "bg-[#080f0c]/85 border-white/5"
+            : "bg-[#080f0c]/90 border-white/5"
         }`}
       >
-        <div className="container mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+        <div className="container mx-auto px-4 sm:px-6 h-14 sm:h-20 flex items-center justify-between">
           {/* Logo */}
-          <Link href="#home" className="flex items-center gap-2.5 sm:gap-3 group">
-            <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-gradient-to-br from-[#1a382c] to-[#0a1812] border-2 border-[#e2b763] flex items-center justify-center shadow-[0_0_15px_rgba(226,183,99,0.25)] group-hover:scale-105 group-hover:border-[#00d37f] transition-all shrink-0">
+          <Link href="#home" className="flex items-center gap-2 sm:gap-3 group">
+            <div className="w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-gradient-to-br from-[#1a382c] to-[#0a1812] border border-[#e2b763] flex items-center justify-center shadow-[0_0_12px_rgba(226,183,99,0.25)] group-hover:border-[#00d37f] transition-all shrink-0">
               <svg
                 viewBox="0 0 24 24"
-                className="w-5 h-5 sm:w-6 sm:h-6 stroke-[#e2b763] group-hover:stroke-[#00d37f] transition-colors"
+                className="w-4 h-4 sm:w-6 sm:h-6 stroke-[#e2b763] group-hover:stroke-[#00d37f] transition-colors"
                 fill="none"
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -57,10 +57,10 @@ export default function Navbar() {
               </svg>
             </div>
             <div className="flex flex-col">
-              <span className="font-heading text-base sm:text-xl font-extrabold tracking-wider uppercase bg-gradient-to-r from-white via-white to-[#e2b763] bg-clip-text text-transparent leading-tight">
+              <span className="font-heading text-sm sm:text-xl font-extrabold tracking-tight uppercase text-white leading-tight">
                 Animal Atlanta
               </span>
-              <span className="text-[9px] sm:text-[10px] tracking-widest uppercase text-[#00d37f] font-semibold leading-tight">
+              <span className="text-[8px] sm:text-[10px] tracking-wider uppercase text-[#00d37f] font-semibold leading-tight">
                 Exotics &bull; Feeders &bull; Care
               </span>
             </div>

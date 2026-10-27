@@ -100,7 +100,7 @@ export default function StoreLocation() {
               href="https://maps.google.com/?q=1910+Eagle+Dr+1500+Woodstock+GA+30189"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-white font-semibold text-sm py-3 px-6 rounded-full border border-white/10 hover:border-white/20 transition-all mt-4"
+              className="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 text-white font-semibold text-xs sm:text-sm py-2.5 sm:py-3 px-5 rounded-xl border border-white/10 hover:border-white/20 transition-all mt-4"
             >
               <ExternalLink className="w-4 h-4 text-[#00d37f]" />
               <span>Open Directions in Google Maps</span>
@@ -218,7 +218,7 @@ export default function StoreLocation() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-[#00b86c] hover:bg-[#00d37f] text-[#04190f] font-bold text-sm py-3.5 rounded-full flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(0,211,127,0.35)] transition-all hover:shadow-[0_6px_25px_rgba(0,211,127,0.5)] cursor-pointer mt-2"
+                    className="w-full bg-gradient-to-r from-[#00d37f] to-[#00b86c] hover:brightness-110 active:scale-[0.98] text-[#04190f] font-bold text-xs sm:text-sm py-3 px-5 rounded-xl flex items-center justify-center gap-2 shadow-[0_4px_16px_rgba(0,211,127,0.25)] transition-all cursor-pointer mt-2"
                   >
                     {loading ? (
                       <span>Sending Message...</span>

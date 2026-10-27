@@ -37,7 +37,7 @@ export default function DevModal({ isOpen, featureName, onClose }: DevModalProps
 
         <button
           onClick={onClose}
-          className="w-full bg-[#e2b763] hover:bg-[#edd08c] text-[#050a08] font-bold text-sm py-3 rounded-full transition-all cursor-pointer shadow-lg"
+          className="w-full bg-[#e2b763] hover:bg-[#edd08c] text-[#050a08] font-bold text-sm py-2.5 rounded-xl transition-all cursor-pointer shadow-lg active:scale-[0.98]"
         >
           OK &bull; Fechar
         </button>

@@ -47,41 +47,54 @@ export default function Categories({ onOpenDevModal }: CategoriesProps) {
   };
 
   return (
-    <section className="py-10 sm:py-16" id="categories">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+    <section className="py-8 sm:py-16" id="categories">
+      <div className="container mx-auto px-3.5 sm:px-6">
+        
+        {/* Section Header */}
+        <div className="text-center max-w-xl mx-auto mb-6 sm:mb-10">
+          <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#00d37f] bg-[#00d37f]/10 border border-[#00d37f]/30 px-3 py-1 rounded-full inline-block mb-2">
+            Explore Our Departments
+          </span>
+          <h2 className="font-heading text-xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
+            Captive-Bred &amp; Hand-Raised Pets
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6">
           {categories.map((cat) => (
             <div
               key={cat.id}
               onClick={() => handleClick(cat.title)}
-              className="group relative bg-[#0e1713] border border-white/10 hover:border-[#00d37f]/50 rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_12px_30px_rgba(0,0,0,0.6),0_0_25px_rgba(0,211,127,0.15)] cursor-pointer"
+              className="group relative bg-[#0e1713] border border-white/10 hover:border-[#00d37f]/50 rounded-xl sm:rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_12px_25px_rgba(0,0,0,0.6),0_0_20px_rgba(0,211,127,0.12)] cursor-pointer"
             >
               {/* Image Box */}
-              <div className="relative h-44 sm:h-48 w-full overflow-hidden">
+              <div className="relative aspect-[4/3] sm:h-48 w-full overflow-hidden">
                 <Image
                   src={cat.image}
                   alt={cat.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0e1713] via-transparent to-transparent opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0e1713] via-transparent to-transparent opacity-70" />
               </div>
 
               {/* Body */}
-              <div className="p-4 sm:p-5 flex flex-col flex-grow">
-                <h3 className="font-heading text-lg sm:text-xl font-bold text-white mb-1.5 group-hover:text-[#00d37f] transition-colors">
+              <div className="p-3 sm:p-5 flex flex-col flex-grow">
+                <h3 className="font-heading text-sm sm:text-xl font-bold text-white mb-1 group-hover:text-[#00d37f] transition-colors tracking-tight">
                   {cat.title}
                 </h3>
-                <p className="text-gray-300 text-xs sm:text-sm leading-relaxed mb-4 flex-grow">
+                
+                {/* Short text for mobile, detailed for tablet/desktop */}
+                <p className="text-gray-300 text-[11px] sm:text-sm leading-relaxed mb-3 flex-grow line-clamp-2 sm:line-clamp-none">
                   {cat.desc}
                 </p>
 
-                <div className="pt-3 border-t border-white/5 flex items-center justify-between mt-auto">
-                  <span className="text-xs font-semibold text-[#00d37f]">
-                    {cat.action}
+                <div className="pt-2 sm:pt-3 border-t border-white/5 flex items-center justify-between mt-auto">
+                  <span className="text-[10px] sm:text-xs font-semibold text-[#00d37f] truncate">
+                    Explore
                   </span>
-                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-white/5 group-hover:bg-[#00d37f] border border-white/10 group-hover:border-[#00d37f] flex items-center justify-center text-white group-hover:text-[#04190f] transition-all">
-                    <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                  <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-white/5 group-hover:bg-[#00d37f] border border-white/10 group-hover:border-[#00d37f] flex items-center justify-center text-white group-hover:text-[#04190f] transition-all shrink-0">
+                    <ArrowUpRight className="w-3 h-3 sm:w-4 sm:h-4" />
                   </div>
                 </div>
               </div>
