@@ -30,7 +30,7 @@ export default function StoreLocation() {
               </div>
 
               <h2 className="font-heading text-3xl font-extrabold text-white mb-6">
-                Visit the New Animal Atlanta
+                Visit Animal Atlanta
               </h2>
 
               <div className="space-y-6 mb-8">

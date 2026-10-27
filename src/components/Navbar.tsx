@@ -22,10 +22,10 @@ export default function Navbar() {
       <div className="bg-gradient-to-r from-[#042517] via-[#0b3d27] to-[#042517] border-b border-[#00d37f]/25 py-2 px-4 text-center text-xs md:text-sm font-medium text-[#92eec4]">
         <div className="container mx-auto flex items-center justify-center gap-3">
           <span className="bg-[#00d37f] text-[#042013] text-[11px] font-bold uppercase px-2.5 py-0.5 rounded-full">
-            New Owners &amp; Location
+            Woodstock, GA
           </span>
           <span>
-            Now Open at 1910 Eagle Dr #1500, Woodstock, GA! Call{" "}
+            Visit us at 1910 Eagle Dr #1500! Call{" "}
             <a href="tel:7705910007" className="underline font-bold text-white hover:text-[#00d37f]">
               (770) 591-0007
             </a>

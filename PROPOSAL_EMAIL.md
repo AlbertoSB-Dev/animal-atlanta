@@ -6,7 +6,7 @@
 
 ---
 
-## 📧 Email em Inglês (Curto, Direto e Focado em Fechar Venda)
+## 📧 Email em Inglês (Focado em Loja Tradicional / Estabelecida)
 
 **Subject:** Website Redesign Proposal for Animal Atlanta (Woodstock, GA)
 
@@ -14,20 +14,20 @@
 
 Hi Animal Atlanta Team,
 
-I recently saw your store and your new location on Eagle Drive in Woodstock. You have an impressive business and a great selection of exotic pets, but your current website is quite outdated and no longer represents the quality of your store.
+I recently came across Animal Atlanta and your store on Eagle Drive in Woodstock. You have an established reputation and a great selection of exotic pets, hand-raised birds, and feeder supplies, but your current website is quite outdated and no longer represents the real quality and scale of your store.
 
-In today's market, your website is your company’s digital storefront and the first impression for customers in Greater Atlanta.
+In today's digital landscape, your website is your company’s storefront on the internet and the very first impression for customers searching in Greater Atlanta.
 
-We developed a modern redesign concept specifically for Animal Atlanta so you can see how your brand can look with a premium digital presence:
+To show what's possible, we created a modern website redesign concept specifically for Animal Atlanta:
 
 👉 **Live Concept:** https://albertotech.com.br/animal-atlanta  
 👉 **Our Agency:** https://albertotech.com.br  
 
-We would like to propose building and launching this complete visual update for your business. We handle the entire design, mobile optimization, and setup.
+We specialize in modern web design and would like to propose building and launching this complete visual update for your business. We handle the entire design, mobile optimization, and deployment.
 
-If you are interested in modernizing your website, let me know when you are available for a quick chat so I can share our pricing and project details.
+If you are open to modernizing your digital presence, let me know when you are available for a quick conversation so I can share our pricing and project details.
 
-You can reply directly to this email or contact me on WhatsApp.
+You can reply directly to this email or reach out on WhatsApp.
 
 Best regards,
 
@@ -41,21 +41,21 @@ Website: https://albertotech.com.br
 
 ### Versão Alternativa (Ultra Curta — 3 Parágrafos)
 
-**Subject:** Quick proposal: New website for Animal Atlanta
+**Subject:** Quick proposal: Modern website for Animal Atlanta
 
 **Body:**
 
 Hi Team,
 
-I came across Animal Atlanta and noticed your current website is quite dated and doesn't match the quality of your physical store in Woodstock. 
+I came across Animal Atlanta and noticed that while you have an established exotic pet store in Woodstock, your current website is dated and doesn't do justice to the quality of your showroom and inventory.
 
-A website is your company's identity on the internet. To show you what's possible, we created a visual concept of a modern website tailored for your store:
+Your website is your company's identity online. To illustrate what an upgrade looks like, we designed a modern visual concept tailored for your store:
 
 🔗 **Preview here:** https://albertotech.com.br/animal-atlanta
 
-We offer full website modernization services and would love to partner with you to deploy this new visual identity. 
+We would love to partner with you to deploy this new visual identity. 
 
-Are you open to reviewing a quick proposal and pricing to update your site?
+Are you open to reviewing a quick proposal and pricing to update your website?
 
 Best,
 

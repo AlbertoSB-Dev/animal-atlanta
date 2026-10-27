@@ -15,7 +15,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed mb-6 max-w-sm">
-              Your source for happy and healthy pets! New owners, new location, and endless adventure in Woodstock, Georgia.
+              Your trusted source for happy and healthy pets, exotic birds, reptiles, and live feeders in Woodstock, Georgia.
             </p>
 
             <div className="flex items-center gap-4">

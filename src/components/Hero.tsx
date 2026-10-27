@@ -51,7 +51,7 @@ export default function Hero({ onOpenDevModal }: HeroProps) {
 
           <div className="bg-[#050a08]/60 backdrop-blur-md border border-white/10 p-5 rounded-2xl mb-8 max-w-xl shadow-2xl">
             <p className="text-gray-200 text-base sm:text-lg leading-relaxed">
-              <strong className="text-white">Welcome to the New Animal Atlanta! New Owners. New Location.</strong>{" "}
+              <strong className="text-white">Welcome to Animal Atlanta! Your Premier Exotic Destination.</strong>{" "}
               Endless adventure for you and your future companion. Healthy captive-bred reptiles, hand-raised birds, small mammals, live &amp; frozen feeders, and expert care in Woodstock, Georgia.
             </p>
           </div>
