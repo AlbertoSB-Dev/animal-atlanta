@@ -1,0 +1,152 @@
+import React from "react";
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="bg-[#040806] border-t border-white/10 pt-16 pb-8 text-gray-400">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">
+          
+          {/* Brand Info */}
+          <div className="lg:col-span-4 flex flex-col">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="font-heading text-xl font-extrabold tracking-wider uppercase text-white">
+                Animal Atlanta
+              </span>
+            </div>
+            <p className="text-sm text-gray-400 leading-relaxed mb-6 max-w-sm">
+              Your source for happy and healthy pets! New owners, new location, and endless adventure in Woodstock, Georgia.
+            </p>
+
+            <div className="flex items-center gap-4">
+              <a
+                href="https://www.facebook.com/animalatlanta"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-white/5 hover:bg-[#00d37f] border border-white/10 flex items-center justify-center text-white hover:text-[#04190f] transition-all"
+                title="Facebook"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M24 12.0726C24 5.44354 18.629 0.0725708 12 0.0725708C5.37097 0.0725708 0 5.44354 0 12.0726C0 18.0619 4.38823 23.0264 10.125 23.9274V15.5414H7.07661V12.0726H10.125V9.4287C10.125 6.42144 11.9153 4.76031 14.6574 4.76031C15.9706 4.76031 17.3439 4.99451 17.3439 4.99451V7.94612H15.8303C14.34 7.94612 13.875 8.87128 13.875 9.82015V12.0726H17.2031L16.6708 15.5414H13.875V23.9274C19.6118 23.0264 24 18.0619 24 12.0726Z" />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.instagram.com/animalatlanta"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-white/5 hover:bg-[#00d37f] border border-white/10 flex items-center justify-center text-white hover:text-[#04190f] transition-all"
+                title="Instagram"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.0027 5.84808C8.59743 5.84808 5.85075 8.59477 5.85075 12C5.85075 15.4053 8.59743 18.1519 12.0027 18.1519C15.4079 18.1519 18.1546 15.4053 18.1546 12C18.1546 8.59477 15.4079 5.84808 12.0027 5.84808ZM12.0027 15.9996C9.80212 15.9996 8.00312 14.2059 8.00312 12C8.00312 9.7941 9.79677 8.00046 12.0027 8.00046C14.2086 8.00046 16.0022 9.7941 16.0022 12C16.0022 14.2059 14.2032 15.9996 12.0027 15.9996ZM19.8412 5.59644C19.8412 6.39421 19.1987 7.03135 18.4062 7.03135C17.6085 7.03135 16.9713 6.38885 16.9713 5.59644C16.9713 4.80402 17.6138 4.16153 18.4062 4.16153C19.1987 4.16153 19.8412 4.80402 19.8412 5.59644ZM23.9157 7.05277C23.8247 5.13063 23.3856 3.42801 21.9775 2.02522C20.5747 0.622429 18.8721 0.183388 16.9499 0.0870135C14.9689 -0.0254238 9.03112 -0.0254238 7.05008 0.0870135C5.1333 0.178034 3.43068 0.617075 2.02253 2.01986C0.614389 3.42265 0.180703 5.12527 0.0843279 7.04742C-0.0281093 9.02845 -0.0281093 14.9662 0.0843279 16.9472C0.175349 18.8694 0.614389 20.572 2.02253 21.9748C3.43068 23.3776 5.12794 23.8166 7.05008 23.913C9.03112 24.0254 14.9689 24.0254 16.9499 23.913C18.8721 23.822 20.5747 23.3829 21.9775 21.9748C23.3803 20.572 23.8193 18.8694 23.9157 16.9472C24.0281 14.9662 24.0281 9.03381 23.9157 7.05277ZM21.3564 19.0728C20.9388 20.1223 20.1303 20.9307 19.0755 21.3537C17.496 21.9802 13.7481 21.8356 12.0027 21.8356C10.2572 21.8356 6.50396 21.9748 4.92984 21.3537C3.88042 20.9361 3.07195 20.1276 2.64897 19.0728C2.02253 17.4934 2.16709 13.7455 2.16709 12C2.16709 10.2546 2.02789 6.50129 2.64897 4.92717C3.06659 3.87776 3.87507 3.06928 4.92984 2.6463C6.50931 2.01986 10.2572 2.16443 12.0027 2.16443C13.7481 2.16443 17.5014 2.02522 19.0755 2.6463C20.1249 3.06392 20.9334 3.8724 21.3564 4.92717C21.9828 6.50665 21.8383 10.2546 21.8383 12C21.8383 13.7455 21.9828 17.4987 21.3564 19.0728Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          {/* Departments */}
+          <div className="lg:col-span-3">
+            <h5 className="font-heading text-sm font-bold text-white uppercase tracking-wider mb-4">
+              Departments
+            </h5>
+            <ul className="space-y-2.5 text-sm">
+              <li>
+                <Link href="#birds" className="hover:text-[#00d37f] transition-colors">
+                  Exotic Birds &amp; Parrots
+                </Link>
+              </li>
+              <li>
+                <Link href="#reptiles" className="hover:text-[#00d37f] transition-colors">
+                  Pythons, Boas &amp; Geckos
+                </Link>
+              </li>
+              <li>
+                <Link href="#arachnids" className="hover:text-[#00d37f] transition-colors">
+                  Tarantulas &amp; Scorpions
+                </Link>
+              </li>
+              <li>
+                <Link href="#small-animals" className="hover:text-[#00d37f] transition-colors">
+                  Sugar Gliders &amp; Mammals
+                </Link>
+              </li>
+              <li>
+                <Link href="#feeders" className="hover:text-[#00d37f] transition-colors">
+                  The Feeder Bar Menu
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div className="lg:col-span-2">
+            <h5 className="font-heading text-sm font-bold text-white uppercase tracking-wider mb-4">
+              Services
+            </h5>
+            <ul className="space-y-2.5 text-sm">
+              <li>
+                <Link href="#services" className="hover:text-[#00d37f] transition-colors">
+                  Bird Wing Trims
+                </Link>
+              </li>
+              <li>
+                <Link href="#services" className="hover:text-[#00d37f] transition-colors">
+                  Beak &amp; Nail Trims
+                </Link>
+              </li>
+              <li>
+                <Link href="#services" className="hover:text-[#00d37f] transition-colors">
+                  Bird DNA Sexing
+                </Link>
+              </li>
+              <li>
+                <Link href="#services" className="hover:text-[#00d37f] transition-colors">
+                  Reptile Nail Trims
+                </Link>
+              </li>
+              <li>
+                <Link href="#services" className="hover:text-[#00d37f] transition-colors">
+                  Pet Boarding
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Newsletter */}
+          <div className="lg:col-span-3">
+            <h5 className="font-heading text-sm font-bold text-white uppercase tracking-wider mb-4">
+              Arrival Alerts
+            </h5>
+            <p className="text-xs text-gray-400 mb-3">
+              Subscribe to get notified whenever new captive-bred babies, rare tarantulas, or fresh feeder shipments arrive.
+            </p>
+            <form onSubmit={(e) => { e.preventDefault(); alert('Subscribed to Animal Atlanta alerts!'); }} className="flex gap-2">
+              <input
+                type="email"
+                required
+                placeholder="Enter email..."
+                className="bg-white/5 border border-white/10 rounded-full px-4 py-2 text-xs text-white focus:outline-none focus:border-[#00d37f] grow"
+              />
+              <button
+                type="submit"
+                className="bg-[#00b86c] hover:bg-[#00d37f] text-[#04190f] text-xs font-bold px-4 py-2 rounded-full cursor-pointer"
+              >
+                Join
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        {/* Bottom */}
+        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+          <p>&copy; 2026 Animal Atlanta. All Rights Reserved. 1910 Eagle Dr #1500, Woodstock, GA 30189 &bull; (770) 591-0007</p>
+          <p className="max-w-md text-center sm:text-right">
+            Dedicated to ethical captive breeding and responsible exotic husbandry in Georgia.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}

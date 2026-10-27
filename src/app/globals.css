@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-deep: #050a08;
+  --bg-main: #080f0c;
+  --bg-card: #0e1713;
+  --bg-card-hover: #14221c;
+  
+  --emerald-glow: #00d37f;
+  --emerald-primary: #00b86c;
+  --emerald-dark: #053b26;
+  
+  --gold-accent: #e2b763;
+  
+  --text-primary: #f2f7f4;
+  --text-secondary: #9db2a7;
+  --text-muted: #647b70;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at 50% 0%, #0d2118 0%, #080f0c 45%, #050a08 100%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+.font-heading {
+  font-family: 'Syne', sans-serif;
+}
